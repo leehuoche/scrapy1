@@ -11,6 +11,7 @@ class XuyouSpider(scrapy.Spider):
 
 
     def parse(self,response):
+    	#提取名字以及第一段
 
         title=response.xpath("/html/body/div[2]/div/div[2]/div[1]/div/h1/a/text()").extract()[0]
         first_par=response.xpath("/html/body/div[2]/div/div[2]/div[1]/div/div/p/text()").extract()[0]
