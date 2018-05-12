@@ -1,5 +1,5 @@
 # scrapy1
-这个项目是用scrapy建立的爬虫。作为实际的演示，抓取了我最喜爱的一个博客--徐宥的博客`https://blog.youxu.info/archive.html`。并打印了他所发表的文章的标题。
+这个项目是用scrapy建立的爬虫。作为实际的演示，抓取了我最喜爱的一个博客--徐宥的博客`https://blog.youxu.info`。并打印了他所发表的文章的标题。
 
 
 使用此项目首先需要安装scrapy:`pip install scrapy`
@@ -8,6 +8,8 @@
 
 
 标题的结果放在文件 `titles.txt`.
+
+本次可以将标题打印为单个的`txt`文档.
 
 
 # 过程体会
@@ -21,3 +23,6 @@
 
 # 自动爬取下一页
 使用`Request` 中的`callback` 回调`parse`函数即可。
+
+# 下一步待优化
+将提取的数据放到数据库里
